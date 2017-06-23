@@ -56,7 +56,6 @@ class MainActivity : BaseActivity(),ToolbarManager , WeatherContract.View{
         if(area.equals("")){
             toast("请输入城市名称")
         }else{
-            showWaiting()
             mPresenter?.getWeatherByCityName(area, MainActivity@this)
         }
     }

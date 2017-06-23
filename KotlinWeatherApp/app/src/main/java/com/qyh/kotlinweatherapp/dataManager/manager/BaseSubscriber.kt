@@ -16,7 +16,7 @@ abstract class BaseSubscriber<T>(val context: BaseActivity) : Subscriber<T>() {
 
     override fun onStart() {
         super.onStart()
-        if(OkhttpManager.isNetworkReachable(context)){
+        if(!OkhttpManager.isNetworkReachable(context)){
             onCompleted()
             return
         }
