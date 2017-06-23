@@ -12,11 +12,11 @@ import rx.Subscriber
 /**
  * Created by dan.y on 2017/6/22.
  */
-class WeatherPresenter(view : WeatherContract.View) : WeatherContract.Presenter {
-    var view:WeatherContract.View?=null
+class WeatherPresenter(var view : WeatherContract.View) : WeatherContract.Presenter {
+//    var view:WeatherContract.View?=null ----不加var修饰的方式
 
     init {
-        this.view = view
+//        this.view = view
         view.setWeatherPresenter(this)
     }
 
