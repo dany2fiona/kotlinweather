@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FionaWeather</string>
+
+    <string name="tip_details_time">白天/夜晚</string>
+    <string name="tip_details_temper">温度</string>
+    <string name="tip_details_wxwl">风向风力</string>
+    <string name="tip_details_rcrl">日出/日落</string>
+
+</resources>

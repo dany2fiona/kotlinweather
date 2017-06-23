@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.qyh.kotlinweatherapp.ui.MainActivity">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/forecastList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/toolbar_2hight" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/toolbar_layout"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+            <!--添加Toolbar的子控件-->
+            <include layout="@layout/toolbar_titleandright" />
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/gl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_hight"
+            android:background="@drawable/border_bottom"
+            app:columnCount="4"
+            app:rowCount="1">
+
+            <LinearLayout
+                style="@style/details_layout"
+                app:layout_columnWeight="1.2"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    style="@style/details_tv"
+                    android:text="@string/tip_details_time" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/details_layout"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    style="@style/details_tv"
+                    android:text="@string/tip_details_temper" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/details_layout"
+                app:layout_columnWeight="1.2"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    style="@style/details_tv"
+                    android:text="@string/tip_details_wxwl" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/details_layout"
+                app:layout_columnWeight="1.2"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    style="@style/details_tv"
+                    android:text="@string/tip_details_rcrl" />
+            </LinearLayout>
+
+        </android.support.v7.widget.GridLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

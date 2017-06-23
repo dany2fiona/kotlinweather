@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightgray"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/item_details_tv_nocolor"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="4"
+        app:rowCount="1"
+        >
+        <!--android:background="@drawable/border_bottom_white"-->
+        <LinearLayout
+            style="@style/item_details_layout"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1.2"
+            >
+            <ImageView
+                android:id="@+id/iv_temper"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/tv_temper"
+                style="@style/item_details_tv_nocolor"
+                android:textColor="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_details_layout"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            >
+            <TextView
+                android:id="@+id/tv_wd"
+                style="@style/item_details_tv_nocolor"
+                android:textColor="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_details_layout"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1.2"
+            >
+            <TextView
+                android:id="@+id/tv_wx"
+                style="@style/item_details_tv_nocolor"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <TextView
+                android:id="@+id/tv_wl"
+                style="@style/item_details_tv_nocolor"
+                android:textColor="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_details_layout"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1.2"
+            >
+            <TextView
+                android:id="@+id/tv_rcrl"
+                style="@style/item_details_tv_nocolor"
+                android:textColor="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="4"
+        app:rowCount="1"
+        android:background="@color/colorPrimaryDark"
+        >
+        <!--android:background="@drawable/border_bottom_white"-->
+        <LinearLayout
+            style="@style/item_details_layout"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1.2"
+            >
+            <ImageView
+                android:id="@+id/iv_temper_n"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:id="@+id/tv_temper_n"
+                style="@style/item_details_tv_nocolor"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_details_layout"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            >
+            <TextView
+                android:id="@+id/tv_wd_n"
+                style="@style/item_details_tv_nocolor"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_details_layout"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1.2"
+            >
+            <TextView
+                android:id="@+id/tv_wx_n"
+                style="@style/item_details_tv_nocolor"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/tv_wl_n"
+                style="@style/item_details_tv_nocolor"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/item_details_layout"
+            app:layout_rowWeight="1"
+            app:layout_columnWeight="1.2"
+            >
+            <TextView
+                android:id="@+id/tv_rcrl_n"
+                style="@style/item_details_tv_nocolor"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.GridLayout>
+
+
+
+</LinearLayout>
